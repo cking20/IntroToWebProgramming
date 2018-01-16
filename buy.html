@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <title>Pollute-BUY</title>
+  <link rel="stylesheet" type="text/css" href="Pollute.css" />
+</head>
+
+<body>
+	<nav role="navigation" class="main-nav" style="z-index:100;">
+			<ul>
+				<li><a id="blank"></a></li>
+				<li><a id="blank"></a></li>
+				
+				<li><a href="index.html">Home</a></li>
+				
+				<li><a href="devlog.html">DevLog</a>
+				
+				<li style="padding-top: 10px; padding-bottom: 11px;"> 
+					<a id="buy-img" class="buygamelogo" href="buy.html" >
+						  <img src="images/buy.png" onmouseover="this.src='images/buy-o.png'"
+						  onmouseout="this.src='images/buy.png'"
+						  alt="Buy the game" height="60" width="100"> 
+					</a>
+					
+					
+				</li>
+				
+				
+				
+				<li ><a href="wiki/index.html">Wiki</a>
+					<ul style="z-index:100;">
+						<li style="z-index:100"><a href="#">Creatures</a>
+							<ul style="z-index:100;">
+								<li><a href="#">Friendly</a></li>
+								<li><a href="#">Enemy</a></li>
+								<li><a href="#">Utility</a>
+									<ul style="z-index:100;">
+										<li><a href="#">Golems</a></li>
+										<li><a href="#">Mounts</a></li>
+									</ul>
+								</li>
+							</ul>
+							
+						</li>
+						
+						<li><a href="#">Characters</a>
+							<ul style="z-index:100;">
+								<li><a href="#">Playable</a></li>
+								<li><a href="#">Non-Playable</a></li>
+							</ul>
+						
+						</li>
+						
+						<li><a href="#">Places</a></li>
+					</ul>
+				</li>
+
+				
+				<li><a href="gallery.html">Gallery</a></li>
+				<li><a id="blank"></a></li>
+				<li><a id="blank"></a></li>
+			</ul>
+	</nav>
+	<main>
+	<div id="purchase">
+	<p style="text-align:center;">Buy it on Steam:<a href="http://store.steampowered.com">Pollute The Game</a><p>
+	<h2>Purchase</h2>
+	<form name="order" id="order" action="http://jcc.sunyjefferson.edu/cis119/vqs/show-data.php" method="post"> 
+	<!-- name is for the back end of the server, id lets you tag css to the puppy  action is where it is being sent to. 
+	action is where exactly to send the data, method: a "post" doesnt show up in the url, a "get" does show up in url/-->
+	
+	<fieldset>
+	<legend> Account Creation</legend>
+	<label for="Name">User Name:</label><input type="text" name="Name" required="required"><br>
+	<label for="Email">Email:</label><input type="email" name="Email" required="required"><br>
+	<label for="Password">Password:</label><input type="password" name="Password" required="required"><br>
+
+	</fieldset>
+	
+	<fieldset>
+	<legend> Select Game Package</legend>
+	
+		<input type="radio" name="Game-type" value="Platinum"><label for="Food-type">Platinum(3 Copies, Soundtrack, and Exclusive Golum ) -$59.99</label><br>
+		<input type="radio" name="Game-type" value="Gold"><label for="Food-type"    >Gold    (2 Copies, and Soundtrack)                   -$29.99</label><br>
+		<input type="radio" name="Game-type" value="Silver"><label for="Food-type"  >Silver  (1 Copy and Soundtrack)                      -$19.99</label><br>
+		<input type="radio" name="Game-type" value="Basic"><label for="Food-type"   >Basic   (1 Copy)                                     -$15.99</label><br>
+	
+	
+	</fieldset>
+	<input type="submit" value="Order Now">
+	<input type="reset" value="Reset">
+	
+	
+	
+	
+	
+	<fieldset>
+	<legend> Comments</legend>
+	<textarea name="message" rows="10" cols="173">
+Submit your feedback
+	</textarea>
+	</fieldset>
+	
+	
+	<input type="submit" value="Order Now">
+	<input type="reset" value="Reset">
+	</form>
+	</div>
+	</main>
+</body>
+
+
+
